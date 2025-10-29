@@ -1,6 +1,6 @@
 # 🔍 SearchEngine
 
-[English](README.md) | **中文说明**
+[English](README.md) | **英文说明**
 
 ---
 
