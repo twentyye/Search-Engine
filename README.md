@@ -1,4 +1,8 @@
+
 #  SearchEngine
+
+```markdown
+**English** | [中文说明](README.zh.md)
 
 A **high-performance multithreaded search engine server framework** built with **C++11** on **Linux**.  
 The project consists of **offline index building** and **online search services**, supporting Chinese word segmentation, pagination, and keyword search.  
