@@ -1,0 +1,5 @@
+typer>=0.12
+paddleocr>=2.8
+opencv-python>=4.10
+ebooklib>=0.18
+numpy>=1.24

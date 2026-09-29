@@ -1,0 +1,64 @@
+﻿# Visual Studio
+.vs/
+
+# Python virtual environments
+.venv/
+.venv-booksort/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Build output
+build/
+bin/
+obj/
+Debug/
+Release/
+cmake-build-*/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+
+# IDE files
+.idea/
+.vscode/
+
+# Editor configuration
+*.ycm_extra_conf.py
+
+# Logs
+log/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Runtime cache
+cache/
+
+# Generated output
+output/
+
+# Search engine generated data
+offset.dat
+ripepage.dat
+invertIndex.dat
+
+# Unneeded third-party repository
+/3rdparty/json-develop/
+
+# Compiled executable
+/3rdparty/tinyxml2/main
+
+# OS files
+.DS_Store
+Thumbs.db
