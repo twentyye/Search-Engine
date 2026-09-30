@@ -71,16 +71,19 @@
 ## ⚡ 快速开始
 
 ```bash
-# 构建项目
-mkdir build && cd build
-cmake ..
+# 克隆项目
+git clone https://github.com/twentyye/Search-Engine.git
+cd Search-Engine
+
+# 编译项目
 make
 
-# 构建离线索引
-./SearchEngine --build-index
+# 构建搜索索引
+./offline1
+./offline2
 
 # 启动在线搜索服务
-./SearchEngine --serve
+./serve
 
-
-
+# 启动客户端
+./client
