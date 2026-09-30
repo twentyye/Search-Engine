@@ -72,16 +72,21 @@ It adopts a **Reactor pattern + thread pool** architecture to achieve efficient 
 ##  Quick Start
 
 ```bash
-# Build the project
-mkdir build && cd build
-cmake ..
+### 1. Clone the repository
+
+git clone https://github.com/twentyye/Search-Engine.git
+cd Search-Engine
+
+### 2. Build the project
+
 make
 
-# Build offline index
-./SearchEngine --build-index
+### 3. Build offline index
 
-# Run online search service
-./SearchEngine --serve
+
+### 4. Start the search server
+
+### 5. Start the client
 
 ---
 
