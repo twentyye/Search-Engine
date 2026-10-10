@@ -37,6 +37,7 @@
 | 编程语言 | C++11 |
 | 平台 | Linux |
 | 并发模型 | Reactor 模型 + 线程池 |
+| 网络编程 | Socket API / epoll |
 | 分词工具 | CppJieba |
 | 数据库 | MySQL |
 | 构建工具 | CMake |
@@ -70,20 +71,50 @@
 
 ## ⚡ 快速开始
 
+### 1. 克隆项目
+
 ```bash
-# 克隆项目
 git clone https://github.com/twentyye/Search-Engine.git
 cd Search-Engine
+```
 
-# 编译项目
-make
+### 2. 编译项目
 
-# 构建搜索索引
-./offline1
-./offline2
+创建可执行文件输出目录，并编译离线模块、在线服务器和客户端：
 
-# 启动在线搜索服务
-./serve
+```bash
+mkdir -p bin
+make offline server client
+```
 
-# 启动客户端
-./client
+生成的可执行文件位于 `bin/` 目录下。
+
+### 3. 构建词典与索引
+
+依次运行两个离线模块：
+
+```bash
+./bin/offline1
+./bin/offline2
+```
+
+运行前，请确保所需的输入数据及配置已经准备完成。
+
+### 4. 启动搜索服务器
+
+```bash
+./bin/server
+```
+
+### 5. 启动客户端
+
+打开另一个终端，在项目根目录执行：
+
+```bash
+./bin/client
+```
+
+运行前请检查 `conf/myconf.conf` 及源码中的相关配置。根据实际配置，可能需要先启动 Redis 等外部服务。
+
+---
+
